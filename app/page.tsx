@@ -1,101 +1,146 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div>
+      {/* First half */}
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      <div className=" bg-gradient-to-b from-[#000001] to-[#012864]">
+        <header>
+          <h1 className="item-center text-center w-full pt-28 text-4xl">
+            Find Used Cars in Pakistan
+          </h1>
+          <p className="item-center text-center w-full pt-0 p-2 text-lg">
+            With thousands of cars, we have just the right one for you
+          </p>
+
+          <div className="flex justify-center items-center h-24 w-full">
+            <button className="bg-[#ffffff] text-[#464e60] font-bold pl-2 py-1 px-28 h-10 border border-solid rounded-l-md">
+              Car Make or Model
+            </button>
+            <button className="bg-[#ffffff] text-[#464e60] font-bold pl-2 py-1 px-20 h-10 border border-solid ">
+              All Cities
+            </button>
+            <button className="bg-[#ffffff] text-[#464e60] font-bold pl-2 py-1 px-20 h-10 border border-solid ">
+              Price Range
+            </button>
+            <button className="bg-[#3eb549] text-[#ffffff] font-bold text-xl pl-2 py-1 px-4 h-10 border border-solid rounded-r-md border-[#3eb549]">
+              q
+            </button>
+          </div>
+        </header>
+      </div>
+
+      {/* Second half */}
+
+      <div className=" bg-[#ffffff]">
+        <header>
+          <h1 className="item-center text-center font-bold text-2xl w-full p-6 text-[#404040]">
+            Sell Your Car on PakWheels and Get the Best Price
+          </h1>
+          <div className="flex justify-center items-center h-72 w-full -mt-10">
+            <div className="flex justify-left items-center h-60 w-2/5 bg-[#ffffff] border-[#e6e6e6] border-2 pl-8">
+              <ul>
+                <li className="text-[#233d7b] text-xl font-bold mb-2">
+                  Post your Ad on PakWheels
+                </li>
+                <li className="text-[#434343] text-sm mb-1">
+                  Post your Ad for Free in 3 Easy Steps
+                </li>
+                <li className="text-[#434343] text-sm mb-1">
+                  Get Genuine offers from Verified Buyers
+                </li>
+                <li className="text-[#434343] text-sm mb-1">
+                  Sell your car Fast at the Best Price
+                </li>
+                <li>
+                  <button className="bg-[#b73439] text-white text-bold text-xl rounded-md text-nowrap py-2 px-3 h-12 w-48 mt-3 mr-14 border border-solid border-transparent">
+                    Post Your Ad
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <div className="flex justify-left items-center h-60 w-2/5 bg-[#ffffff] border-[#e6e6e6] border-2 pl-8">
+              <ul>
+                <li className="text-[#233d7b] text-xl font-bold mb-2">
+                  Try PakWheels Sell It For Me
+                </li>
+                <li className="text-[#434343] text-sm mb-1">
+                  Dedicated Sales Expert to Sell your Car
+                </li>
+                <li className="text-[#434343] text-sm mb-1">
+                  We Bargain for you and share the Best Offer
+                </li>
+                <li className="text-[#434343] text-sm mb-1">
+                  We ensure Safe & Secure Transaction
+                </li>
+                <li>
+                  <button className="bg-[#518ecb] text-white text-bold text-xl rounded-md text-nowrap py-2 px-3 h-12 w-48 mt-3 mr-14 border border-solid border-transparent">
+                    Register Your Car
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </header>
+      </div>
+      {/* Third half */}
+      <div className=" bg-[#f2f3f3]">
+      <header>
+        <h1 className="item-center text-start font-bold text-2xl w-full p-8 pl-28 text-[#404040]">
+            Featured New Cars
+          </h1>
+          <ul className="flex text-start text-[#434343] text-xl ml-32 pt-0 gap-10">
+            <li className="font-bold hover:underline hover:underline-offset-8">Popular</li>
+            <li className="hover:underline hover:underline-offset-8">Upcoming</li>
+            <li className="hover:underline hover:underline-offset-8">Newly Launched</li>
+          </ul>
+        <nav className="flex justify-center items-center gap-x-4 bg-transparent h-96 w-full">
+          <div className="flex justify-center items-center bg-[#ffffff] h-72 w-1/4 ml-28 text-center">
+          <ul>
+          <Link href="/toyota-corolla/">
+          <Image className="-mt-4 ml-0"  src="/Toyota-Corolla.jpg" width={270} height={100} alt="Toyota Corolla" />
+          </Link>
+          <li className="text-[#233d7b] font-bold">Toyota Corolla</li>
+          <li className="text-[#3eb549] text-sm">PKR 59.7-75.5 lacs</li>
+          <li className="text-[#7b8397] text-sm pt-1">*****  621 Reviews</li>
+          </ul>
+          </div>
+          <div className="flex justify-center items-center bg-[#ffffff] h-72 w-1/4 text-center">
+          <ul>
+          <Link href="/suzuki-alto/">
+          <Image className="-mt-4 ml-0"  src="/Suzuki-Alto.jpg" width={270} height={100} alt="Suzuki Alto" />
+          </Link>
+          <li className="text-[#233d7b] font-bold">Suzuki Alto</li>
+          <li className="text-[#3eb549] text-sm">PKR 23.3-30.5 lacs</li>
+          <li className="text-[#7b8397] text-sm pt-1">*****  200 Reviews</li>
+          </ul>
+          </div>
+          <div className="flex justify-center items-center bg-[#ffffff] h-72 w-1/4 text-center">
+          <ul>
+          <Link href="/honda-city/">
+          <Image className="-mt-4 ml-0"  src="/Honda-City.jpg" width={270} height={100} alt="Honda City" />
+          </Link>
+          <li className="text-[#233d7b] font-bold">Honda City</li>
+          <li className="text-[#3eb549] text-sm">PKR 46.5-58.5 lacs</li>
+          <li className="text-[#7b8397] text-sm pt-1">*****  458 Reviews</li>
+          </ul>
+          </div>
+          <div className="flex justify-center items-center bg-[#ffffff] h-72 w-1/4 mr-28 text-center">
+          <ul>
+          <Link href="/honda-civic/">
+          <Image className="-mt-4 ml-0"  src="/Honda-Civic.jpg" width={270} height={100} alt="Honda Civic" />
+          </Link>
+          <li className="text-[#233d7b] font-bold">Honda Civic</li>
+          <li className="text-[#3eb549] text-sm">PKR 86.6-99.0 lacs</li>
+          <li className="text-[#7b8397] text-sm pt-1">*****  358 Reviews</li>
+          </ul>
+          </div>
+        </nav>
+      </header>
+      </div>
     </div>
   );
 }
