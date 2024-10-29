@@ -8,10 +8,10 @@ export default function Home() {
 
       <div className=" bg-gradient-to-b from-[#000001] to-[#012864]">
         <header>
-          <h1 className="item-center text-center w-full pt-28 text-4xl">
+          <h1 className="items-center text-center w-full pt-28 text-4xl">
             Find Used Cars in Pakistan
           </h1>
-          <p className="item-center text-center w-full pt-0 p-2 text-lg">
+          <p className="items-center text-center w-full pt-0 p-2 text-lg">
             With thousands of cars, we have just the right one for you
           </p>
 
@@ -36,7 +36,7 @@ export default function Home() {
 
       <div className=" bg-[#ffffff]">
         <header>
-          <h1 className="item-center text-center font-bold text-2xl w-full p-6 text-[#404040]">
+          <h1 className="items-center text-center font-bold text-2xl w-full p-6 text-[#404040]">
             Sell Your Car on PakWheels and Get the Best Price
           </h1>
           <div className="flex justify-center items-center h-72 w-full -mt-10">
