@@ -1,3 +1,5 @@
+import { IoMdStar } from "react-icons/io";
+import { TfiStar } from "react-icons/tfi";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -105,7 +107,8 @@ export default function Home() {
           </Link>
           <li className="text-[#233d7b] font-bold">Toyota Corolla</li>
           <li className="text-[#3eb549] text-sm">PKR 59.7-75.5 lacs</li>
-          <li className="text-[#7b8397] text-sm pt-1">*****  621 Reviews</li>
+          <li className="text-[#7b8397] text-sm pt-1 flex justify-center">
+            <span className="text-yellow-400 flex mr-2"> <IoMdStar /><IoMdStar /><IoMdStar /><TfiStar /><TfiStar /></span> 621 Reviews</li>
           </ul>
           </div>
           <div className="flex justify-center items-center bg-[#ffffff] h-72 w-1/4 text-center">
@@ -115,7 +118,8 @@ export default function Home() {
           </Link>
           <li className="text-[#233d7b] font-bold">Suzuki Alto</li>
           <li className="text-[#3eb549] text-sm">PKR 23.3-30.5 lacs</li>
-          <li className="text-[#7b8397] text-sm pt-1">*****  200 Reviews</li>
+          <li className="text-[#7b8397] text-sm pt-1 flex justify-center">
+            <span className="text-yellow-400 flex mr-2"> <IoMdStar /><IoMdStar /><IoMdStar /><TfiStar /><TfiStar /></span> 200 Reviews</li>
           </ul>
           </div>
           <div className="flex justify-center items-center bg-[#ffffff] h-72 w-1/4 text-center">
@@ -125,7 +129,8 @@ export default function Home() {
           </Link>
           <li className="text-[#233d7b] font-bold">Honda City</li>
           <li className="text-[#3eb549] text-sm">PKR 46.5-58.5 lacs</li>
-          <li className="text-[#7b8397] text-sm pt-1">*****  458 Reviews</li>
+          <li className="text-[#7b8397] text-sm pt-1 flex justify-center">
+            <span className="text-yellow-400 flex mr-2"> <IoMdStar /><IoMdStar /><IoMdStar /><TfiStar /><TfiStar /></span> 458 Reviews</li>
           </ul>
           </div>
           <div className="flex justify-center items-center bg-[#ffffff] h-72 w-1/4 mr-28 text-center">
@@ -135,7 +140,8 @@ export default function Home() {
           </Link>
           <li className="text-[#233d7b] font-bold">Honda Civic</li>
           <li className="text-[#3eb549] text-sm">PKR 86.6-99.0 lacs</li>
-          <li className="text-[#7b8397] text-sm pt-1">*****  358 Reviews</li>
+          <li className="text-[#7b8397] text-sm pt-1 flex justify-center">
+            <span className="text-yellow-400 flex mr-2"> <IoMdStar /><IoMdStar /><IoMdStar /><TfiStar /><TfiStar /></span> 358 Reviews</li>
           </ul>
           </div>
         </nav>

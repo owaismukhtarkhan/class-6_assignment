@@ -1,3 +1,5 @@
+
+
 export default function Thank_You() {
     return (
       <div className="bg-[#ffffff]">
