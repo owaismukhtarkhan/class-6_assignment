@@ -10,10 +10,10 @@ export default function Home() {
 
       <div className=" bg-gradient-to-b from-[#000001] to-[#012864]">
         <header>
-          <h1 className="items-center text-center w-full pt-28 text-4xl">
+          <h1 className="items-center text-center w-full pt-28 text-4xl text-[#ffffff]">
             Find Used Cars in Pakistan
           </h1>
-          <p className="items-center text-center w-full pt-0 p-2 text-lg">
+          <p className="items-center text-center w-full pt-0 p-2 text-lg text-[#ffffff]">
             With thousands of cars, we have just the right one for you
           </p>
 

@@ -8,7 +8,7 @@ export default function Navbar() {
       <Link href="/">
         <Image className="mt-12 ml-12"  src="/logo.svg" width={140} height={140} alt="Pak wheels logo" />
         </Link>
-        <ul className="flex w-full text-White gap-14 justify-end pt-10 mt-6 mr-2">
+        <ul className="flex w-full text-White gap-14 justify-end pt-10 mt-6 mr-2 text-[#ffffff]">
           <li>Used Cars</li>
           <li>New Cars</li>
           <li>Bikes</li>
